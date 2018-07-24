@@ -1,0 +1,18 @@
+body
+{
+	background-color: #001a00;
+	color: #DDDDDD;
+	margin: 0;
+	font-size: 15px;
+}
+
+h1
+{
+	text-align: center;
+	background-color: #000000;
+	letter-spacing: 3px;
+	weight: 1000px;
+	height: 200px;
+	margin: 0;
+	
+}
