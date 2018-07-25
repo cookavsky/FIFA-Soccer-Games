@@ -14,5 +14,48 @@ h1
 	weight: 1000px;
 	height: 200px;
 	margin: 0;
+	padding-bottom: 5px;
+}
+
+#menu
+{
+	weight: 100%;
+	background-color: #00a00f;
+	padding: 10px 0;
+	border-top: 1px solid #00a05f;
+	border-bottom: 1px solid #00a05f;
+	height: 50px;
+	text-align: center;
+}
+
+ol
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 25px;
+	line-height: 200%;
+	display: inline-block;
+}
 	
+ol a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+ol > li
+{
+		float: left;
+		wight: 200px;
+		height: 50px;
+		border-right: 1px dashed #FFF
+}
+
+ol > li > ul
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 15px
 }
