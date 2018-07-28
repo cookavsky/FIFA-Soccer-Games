@@ -11,51 +11,122 @@ h1
 	text-align: center;
 	background-color: #000000;
 	letter-spacing: 3px;
-	weight: 1000px;
+	text-transform:uppercase;
 	height: 200px;
 	margin: 0;
 	padding-bottom: 5px;
 }
 
-#menu
+.menu
 {
-	weight: 100%;
 	background-color: #00a00f;
 	padding: 10px 0;
 	border-top: 1px solid #00a05f;
 	border-bottom: 1px solid #00a05f;
-	height: 50px;
-	text-align: center;
+	float: left;
+	padding: 10px;
+	width: 20%;
 }
 
 ol
 {
-	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	font-size: 25px;
-	line-height: 200%;
+	font-size: 22px;
 	display: inline-block;
 }
-	
+
 ol a
 {
 	text-decoration: none;
+	color: #ddd;
+	display: block;
+}
+
+ol a:hover
+{
+	background-color: #11b11f;
 	color: #fff;
 }
 
 ol > li
 {
-		float: left;
-		wight: 200px;
-		height: 50px;
-		border-right: 1px dashed #FFF
+	border-bottom: 2px solid #FFF;
+}
+
+ol > li:first-child
+{
+	border-top: 2px solid #FFF;
 }
 
 ol > li > ul
 {
-	padding: 0;
-	margin: 0;
 	list-style-type: none;
-	font-size: 15px
+	font-size: 15px;
+}
+
+ol >li:hover > ul > li
+{
+	display:block;
+}
+
+ol > li > ul > li
+{
+	background-color: #00900e;
+	border-top: 1px dashed #FFF;
+}
+
+ul > li:hover
+{
+	display:block;
+}
+
+ul > li
+{
+	background-color: #00900e;
+	border-top: 1px dashed #FFF;
+	list-style-type: none;
+}
+
+ul a
+{
+	text-decoration: none;
+	color: #ddd;
+	display: block;
+}
+
+ul a:hover
+{
+	background-color: #11b11f;
+	color: #fff;
+}
+
+ul > li:last-child
+{
+	border-bottom: 1px dashed #FFF;
+}
+
+.aside
+{
+	background-color: #00a00f;
+	padding-bottom: 10px;
+}
+
+.home-article-1
+{
+	width: 40%;
+	float: left;
+}
+
+article
+{
+	
+}
+
+footer
+{
+	background-color: #000000;
+	clear:both;
+	text-align: center;
+	padding: 10px;
 }
