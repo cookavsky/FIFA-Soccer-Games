@@ -6,26 +6,27 @@ body
 	font-size: 15px;
 }
 
+@media screen and (max-width: 900px) 
+
+{
+	.menu {width: 20%;}
+	.player {width: 50%;}
+}
+
 h1
 {
 	text-align: center;
 	background-color: #000000;
 	letter-spacing: 3px;
 	text-transform:uppercase;
-	height: 200px;
 	margin: 0;
 	padding-bottom: 5px;
 }
 
 .menu
 {
-	background-color: #00a00f;
-	padding: 10px 0;
-	border-top: 1px solid #00a05f;
-	border-bottom: 1px solid #00a05f;
-	float: left;
 	padding: 10px;
-	width: 20%;
+	float: left;
 }
 
 ol
@@ -38,25 +39,19 @@ ol
 
 ol a
 {
+	padding: 1px 3px 1px 3px;
 	text-decoration: none;
 	color: #ddd;
 	display: block;
+	background-color: #00a00f;
+	border: 2px solid #000;
+	border-radius: 8px;
 }
 
 ol a:hover
 {
 	background-color: #11b11f;
 	color: #fff;
-}
-
-ol > li
-{
-	border-bottom: 2px solid #FFF;
-}
-
-ol > li:first-child
-{
-	border-top: 2px solid #FFF;
 }
 
 ol > li > ul
@@ -70,12 +65,6 @@ ol >li:hover > ul > li
 	display:block;
 }
 
-ol > li > ul > li
-{
-	background-color: #00900e;
-	border-top: 1px dashed #FFF;
-}
-
 ul > li:hover
 {
 	display:block;
@@ -83,16 +72,18 @@ ul > li:hover
 
 ul > li
 {
-	background-color: #00900e;
-	border-top: 1px dashed #FFF;
 	list-style-type: none;
 }
 
 ul a
 {
+	padding-left: 3px;
 	text-decoration: none;
 	color: #ddd;
 	display: block;
+	background-color: #00600b;
+	border: 1px dashed #000;
+	border-radius: 8px;
 }
 
 ul a:hover
@@ -101,26 +92,21 @@ ul a:hover
 	color: #fff;
 }
 
-ul > li:last-child
+aside
 {
-	border-bottom: 1px dashed #FFF;
-}
-
-.aside
-{
-	background-color: #00a00f;
 	padding-bottom: 10px;
 }
 
-.home-article-1
+section
 {
-	width: 40%;
-	float: left;
+	display: flex;
 }
 
-article
+.home-article
 {
-	
+	padding: 10px;
+	border: 2px solid #fff;
+	width: 100%;
 }
 
 footer
