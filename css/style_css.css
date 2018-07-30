@@ -3,14 +3,90 @@ body
 	background-color: #001a00;
 	color: #DDDDDD;
 	margin: 0;
-	font-size: 15px;
 }
 
-@media screen and (max-width: 900px) 
-
+@media screen and (min-width:3000px)
 {
-	.menu {width: 20%;}
-	.player {width: 50%;}
+	h1{ height: 30vh; font-size: 120px;}
+	#LogoEA{ width: 10%;}
+	.menu{ font-size: 50px;}
+	ol a{ font-size: 50px;}
+	h2{font-size: 120px;}
+	.home-article{ font-size: 80px;}
+	main{ height: 100vh;}
+	#player{ width: 120%;}
+}
+
+@media screen and (max-width:2600px)
+{
+	h1{ height: 30vh; font-size: 100px;}
+	#LogoEA{ width: 10%;}
+	.menu{ font-size: 40px;}
+	ol a{ font-size: 40px;}
+	h2{font-size: 80px;}
+	.home-article{ font-size: 60px;}
+	#player{ width: 100%;}
+}
+
+@media screen and (max-width:2000px)
+{
+	h1{ height: 25vh; font-size: 60px;}
+	#LogoEA{ width: 8%;}
+	.menu{ font-size: 30px;}
+	ol a{ font-size: 30px;}
+	h2{font-size: 70px;}
+	.home-article{ font-size: 50px;}
+	#player{ width: 100%;}
+}
+
+@media screen and (max-width:1500px)
+{
+	h1{ height: 28vh; font-size: 40px;}
+	#LogoEA{ width: 8%;}
+	.menu{ font-size: 20px;}
+	ol a{ font-size: 20px;}
+	h2{font-size: 40px;}
+	.home-article{ font-size: 30px;}
+	#player{ width: 100%;}
+}
+
+@media screen and (max-width:1100px)
+{
+	h1{ height: 28vh; font-size: 40px;}
+	#LogoEA{ width: 8%;}
+	.menu{ font-size: 15px;}
+	ol a{ font-size: 15px;}
+	h2{font-size: 40px;}
+	.home-article{ font-size: 30px;}
+	#player{ width: 100%;}
+}
+
+@media screen and (max-width:900px)
+{
+	h1{ height: 20vh; font-size: 30px;}
+	#LogoEA{ width: 8%;}
+	.menu{ font-size: 15px;}
+	ol a{ font-size: 15px;}
+	h2{font-size: 40px;}
+	.home-article{ font-size: 20px; max-width: 100%;}
+	#player{ display: none;}
+	#player2{ width: 40%;}
+	main{ flex-direction: column;}
+	section{ display: flex;}
+}
+
+@media screen and (max-width:600px)
+{
+	h1{ height: 20vh; font-size: 30px;}
+	#LogoEA{ width: 8%;}
+	.menu{ font-size: 10px;}
+	ol a{ font-size: 10px;}
+	h2{font-size: 40px;}
+	.home-article{ font-size: 20px; max-width: 92%;}
+	#player{ display: none;}
+	#player2{ display: none;}
+	main{ flex-direction: column;}
+	section{ display: flex;}
 }
 
 h1
@@ -33,7 +109,6 @@ ol
 {
 	padding: 0;
 	list-style-type: none;
-	font-size: 22px;
 	display: inline-block;
 }
 
@@ -97,7 +172,7 @@ aside
 	padding-bottom: 10px;
 }
 
-section
+main
 {
 	display: flex;
 }
@@ -107,6 +182,11 @@ section
 	padding: 10px;
 	border: 2px solid #fff;
 	width: 100%;
+}
+
+@media screen and (min-width:901px)
+{
+	#player2{ display: none;}
 }
 
 footer
