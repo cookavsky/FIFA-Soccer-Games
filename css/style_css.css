@@ -7,64 +7,64 @@ body
 
 @media screen and (min-width:3000px)
 {
-	h1{ height: 30vh; font-size: 120px;}
+	h1{ height: 25vh; font-size: 120px;}
 	#LogoEA{ width: 10%;}
 	.menu{ font-size: 50px;}
 	ol a{ font-size: 50px;}
 	h2{font-size: 120px;}
-	.home-article{ font-size: 80px;}
+	.home-article{ font-size: 80px; max-width: 100%;}
 	main{ height: 100vh;}
 	#player{ width: 120%;}
 }
 
 @media screen and (max-width:2600px)
 {
-	h1{ height: 30vh; font-size: 100px;}
+	h1{ height: 25vh; font-size: 100px;}
 	#LogoEA{ width: 10%;}
 	.menu{ font-size: 40px;}
 	ol a{ font-size: 40px;}
 	h2{font-size: 80px;}
-	.home-article{ font-size: 60px;}
+	.home-article{ font-size: 60px; max-width: 100%;}
 	#player{ width: 100%;}
 }
 
 @media screen and (max-width:2000px)
 {
-	h1{ height: 25vh; font-size: 60px;}
+	h1{ height: 20vh; font-size: 60px;}
 	#LogoEA{ width: 8%;}
 	.menu{ font-size: 30px;}
 	ol a{ font-size: 30px;}
 	h2{font-size: 70px;}
-	.home-article{ font-size: 50px;}
+	.home-article{ font-size: 50px; max-width: 100%;}
 	#player{ width: 100%;}
 }
 
 @media screen and (max-width:1500px)
 {
-	h1{ height: 28vh; font-size: 40px;}
+	h1{ height: 23vh; font-size: 40px;}
 	#LogoEA{ width: 8%;}
 	.menu{ font-size: 20px;}
 	ol a{ font-size: 20px;}
 	h2{font-size: 40px;}
-	.home-article{ font-size: 30px;}
+	.home-article{ font-size: 30px; max-width: 100%;}
 	#player{ width: 100%;}
 }
 
 @media screen and (max-width:1100px)
 {
-	h1{ height: 28vh; font-size: 40px;}
+	h1{ height: 23vh; font-size: 40px;}
 	#LogoEA{ width: 8%;}
 	.menu{ font-size: 15px;}
 	ol a{ font-size: 15px;}
 	h2{font-size: 40px;}
-	.home-article{ font-size: 30px;}
-	#player{ width: 100%;}
+	.home-article{ font-size: 30px; max-width: 100%;}
+	#player{ max-width: 40%;}
 }
 
 @media screen and (max-width:900px)
 {
 	h1{ height: 20vh; font-size: 30px;}
-	#LogoEA{ width: 8%;}
+	#LogoEA{ width: 8%; padding: 20px;}
 	.menu{ font-size: 15px;}
 	ol a{ font-size: 15px;}
 	h2{font-size: 40px;}
@@ -77,7 +77,7 @@ body
 
 @media screen and (max-width:600px)
 {
-	h1{ height: 20vh; font-size: 30px;}
+	h1{ height: 22vh; font-size: 30px;}
 	#LogoEA{ width: 8%;}
 	.menu{ font-size: 10px;}
 	ol a{ font-size: 10px;}
@@ -89,14 +89,35 @@ body
 	section{ display: flex;}
 }
 
+@media screen and (max-width:400px)
+{
+	h1{ height: 20vh; font-size: 20px; max-width: 100%;}
+	#LogoEA{ width: 8%;}
+	.menu{ font-size: 10px; max-width: 40%;}
+	ol a{ font-size: 10px;}
+	h2{font-size: 40px;}
+	.home-article{ font-size: 20px; max-width: 85%;}
+	#player{ display: none;}
+	#player2{ display: none;}
+	main{ flex-direction: column;}
+	section{ display: flex;}
+	footer{ max-width: 100%;}
+}
+
+#LogoEA
+{
+	float: left;
+}
+
 h1
 {
 	text-align: center;
 	background-color: #000000;
 	letter-spacing: 3px;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	margin: 0;
-	padding-bottom: 5px;
+	padding-top: 20px;
+
 }
 
 .menu
