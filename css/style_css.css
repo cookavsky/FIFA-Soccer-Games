@@ -81,7 +81,7 @@ body
 	#LogoEA{ width: 8%;}
 	.menu{ font-size: 10px;}
 	ol a{ font-size: 10px;}
-	h2{font-size: 40px;}
+	h2{font-size: 30px;}
 	.home-article{ font-size: 20px; max-width: 92%;}
 	#player{ display: none;}
 	#player2{ display: none;}
@@ -95,7 +95,7 @@ body
 	#LogoEA{ width: 8%;}
 	.menu{ font-size: 10px; max-width: 40%;}
 	ol a{ font-size: 10px;}
-	h2{font-size: 40px;}
+	h2{font-size: 25px;}
 	.home-article{ font-size: 20px; max-width: 85%;}
 	#player{ display: none;}
 	#player2{ display: none;}
@@ -112,12 +112,12 @@ body
 h1
 {
 	text-align: center;
-	background-color: #000000;
+	background-image: linear-gradient(#00008b, #4b0082);
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	margin: 0;
 	padding-top: 20px;
-
+	font-family: "FreeMono", monospace;
 }
 
 .menu
@@ -182,7 +182,7 @@ ul a
 	border-radius: 8px;
 }
 
-ul a:hover
+ul a :hover
 {
 	background-color: #11b11f;
 	color: #fff;
@@ -198,11 +198,45 @@ main
 	display: flex;
 }
 
+h2
+{
+	font-family: "Comic Sans MS", Comic Sans, cursive;
+}
+
 .home-article
 {
 	padding: 10px;
 	border: 2px solid #fff;
 	width: 100%;
+	text-align: center;
+	font-family: "Andale Mono", monospace;
+	border-radius: 100px;
+}
+
+.home-article a
+{
+	text-decoration: none;
+}
+
+#vs
+{
+	width: 120px;
+}
+
+.continue
+{
+	padding-left: 3px;
+	text-decoration: none;
+	color: #ddd;
+	background-color: #00600b;
+	border: 1px dashed #000;
+	border-radius: 8px;
+}
+
+.continue:hover
+{
+	background-color: #11b11f;
+	color: #fff;
 }
 
 @media screen and (min-width:901px)
@@ -212,8 +246,59 @@ main
 
 footer
 {
-	background-color: #000000;
+	background: linear-gradient(#00008b, #4b0082);
 	clear:both;
 	text-align: center;
 	padding: 10px;
+	position: relative;
+	bottom: 0;
+}
+
+/*//////// Site Mode Game //////*/
+
+.mode
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.mode a
+{
+	border: 5px solid #fff;
+	text-align: center;
+	font-size: 30px;
+	border-radius: 1000px 1000px 1000px 1000px;
+	text-decoration: none;
+	color: #fff;
+	display: flex;
+	padding: 50px;
+	margin: 30px 30px 50px 60px;
+	background: radial-gradient(#DDEDDF,#001a00);
+}
+
+.mode a :hover
+{
+	background-color: #11b11f;
+}
+
+/*//////// Site Pro Clubs //////*/
+
+.foto_article
+{
+	width: 50%;
+}
+
+article
+{
+	font-size: 27px;
+}
+
+h4
+{
+	font-size: 60px;
+	text-align: center;
+	background-image: linear-gradient(red,green,blue);
+	color: #fff;
+	margin: 0;
+	border-radius: 10px 10px 10px 10px;
 }
