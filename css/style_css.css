@@ -12,7 +12,9 @@ body
 	.menu{ font-size: 50px;}
 	ol a{ font-size: 50px;}
 	h2{font-size: 120px;}
+	h4{font-size: 120px;}
 	.home-article{ font-size: 80px; max-width: 100%;}
+	article{ font-size: 80px; max-width: 100%;}
 	main{ height: 100vh;}
 	#player{ width: 120%;}
 }
@@ -24,7 +26,9 @@ body
 	.menu{ font-size: 40px;}
 	ol a{ font-size: 40px;}
 	h2{font-size: 80px;}
+	h4{font-size: 80px;}
 	.home-article{ font-size: 60px; max-width: 100%;}
+	article{ font-size: 60px; max-width: 100%;}
 	#player{ width: 100%;}
 }
 
@@ -35,7 +39,9 @@ body
 	.menu{ font-size: 30px;}
 	ol a{ font-size: 30px;}
 	h2{font-size: 70px;}
+	h4{font-size: 70px;}
 	.home-article{ font-size: 50px; max-width: 100%;}
+	article{ font-size: 50px; max-width: 100%;}
 	#player{ width: 100%;}
 }
 
@@ -46,7 +52,9 @@ body
 	.menu{ font-size: 20px;}
 	ol a{ font-size: 20px;}
 	h2{font-size: 40px;}
+	h4{font-size: 40px;}
 	.home-article{ font-size: 30px; max-width: 100%;}
+	article{ font-size: 30px; max-width: 100%;}
 	#player{ width: 100%;}
 }
 
@@ -57,7 +65,9 @@ body
 	.menu{ font-size: 15px;}
 	ol a{ font-size: 15px;}
 	h2{font-size: 40px;}
+	h4{font-size: 40px;}
 	.home-article{ font-size: 30px; max-width: 100%;}
+	article{ font-size: 30px; max-width: 100%;}
 	#player{ max-width: 40%;}
 }
 
@@ -68,7 +78,9 @@ body
 	.menu{ font-size: 15px;}
 	ol a{ font-size: 15px;}
 	h2{font-size: 40px;}
+	h4{font-size: 40px;}
 	.home-article{ font-size: 20px; max-width: 100%;}
+	article{ font-size: 20px; max-width: 100%;}
 	#player{ display: none;}
 	#player2{ width: 40%;}
 	main{ flex-direction: column;}
@@ -82,7 +94,9 @@ body
 	.menu{ font-size: 10px;}
 	ol a{ font-size: 10px;}
 	h2{font-size: 30px;}
+	h4{font-size: 30px;}
 	.home-article{ font-size: 20px; max-width: 92%;}
+	article{ font-size: 20px; max-width: 100%;}
 	#player{ display: none;}
 	#player2{ display: none;}
 	main{ flex-direction: column;}
@@ -93,10 +107,12 @@ body
 {
 	h1{ height: 20vh; font-size: 20px; max-width: 100%;}
 	#LogoEA{ width: 8%;}
-	.menu{ font-size: 10px; max-width: 40%;}
+	.menu{ font-size: 10px; max-width: 29%;}
 	ol a{ font-size: 10px;}
 	h2{font-size: 25px;}
+	h4{font-size: 25px;}
 	.home-article{ font-size: 20px; max-width: 85%;}
+	article{ font-size: 20px; max-width: 100%;}
 	#player{ display: none;}
 	#player2{ display: none;}
 	main{ flex-direction: column;}
