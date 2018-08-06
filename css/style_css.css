@@ -94,7 +94,7 @@ body
 	.menu{ font-size: 10px;}
 	ol a{ font-size: 10px;}
 	h2{font-size: 30px;}
-	h4{font-size: 30px;}
+	h4{font-size: 25px;}
 	.home-article{ font-size: 20px; max-width: 92%;}
 	article{ font-size: 20px; max-width: 100%;}
 	#player{ display: none;}
@@ -110,7 +110,7 @@ body
 	.menu{ font-size: 10px; max-width: 29%;}
 	ol a{ font-size: 10px;}
 	h2{font-size: 25px;}
-	h4{font-size: 25px;}
+	h4{font-size: 22px;}
 	.home-article{ font-size: 20px; max-width: 85%;}
 	article{ font-size: 20px; max-width: 100%;}
 	#player{ display: none;}
