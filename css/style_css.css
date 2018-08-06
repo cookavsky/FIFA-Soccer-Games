@@ -15,6 +15,8 @@ body
 	h4{font-size: 120px;}
 	.home-article{ font-size: 80px; max-width: 100%;}
 	article{ font-size: 80px; max-width: 100%;}
+	.mode a{ max-width: 100%; max-height: 100%;}
+	.mode img{ max-width: 100%; max-height: 100%;}
 	main{ height: 100vh;}
 	#player{ width: 120%;}
 }
@@ -29,6 +31,8 @@ body
 	h4{font-size: 80px;}
 	.home-article{ font-size: 60px; max-width: 100%;}
 	article{ font-size: 60px; max-width: 100%;}
+	.mode a{ max-width: 100%; max-height: 100%;}
+	.mode img{ max-width: 100%; max-height: 100%;}
 	#player{ width: 100%;}
 }
 
@@ -42,6 +46,8 @@ body
 	h4{font-size: 70px;}
 	.home-article{ font-size: 50px; max-width: 100%;}
 	article{ font-size: 50px; max-width: 100%;}
+	.mode a{ max-width: 100%; max-height: 100%;}
+	.mode img{ max-width: 100%; max-height: 100%;}
 	#player{ width: 100%;}
 }
 
@@ -55,6 +61,8 @@ body
 	h4{font-size: 40px;}
 	.home-article{ font-size: 30px; max-width: 100%;}
 	article{ font-size: 30px; max-width: 100%;}
+	.mode a{ max-width: 100%; max-height: 100%;}
+	.mode img{ max-width: 100%; max-height: 100%;}
 	#player{ width: 100%;}
 }
 
@@ -68,6 +76,8 @@ body
 	h4{font-size: 40px;}
 	.home-article{ font-size: 30px; max-width: 100%;}
 	article{ font-size: 30px; max-width: 100%;}
+	.mode a{ max-width: 100%; max-height: 100%;}
+	.mode img{ max-width: 100%; max-height: 100%;}
 	#player{ max-width: 40%;}
 }
 
@@ -81,6 +91,8 @@ body
 	h4{font-size: 40px;}
 	.home-article{ font-size: 20px; max-width: 100%;}
 	article{ font-size: 20px; max-width: 100%;}
+	.mode a{ width: 100%; height: 100%;}
+	.mode img{ width: 100%; height: 100%;}
 	#player{ display: none;}
 	#player2{ width: 40%;}
 	main{ flex-direction: column;}
@@ -97,6 +109,8 @@ body
 	h4{font-size: 30px;}
 	.home-article{ font-size: 20px; max-width: 92%;}
 	article{ font-size: 20px; max-width: 100%;}
+	.mode a{ width: 100%; height: 100%;}
+	.mode img{ width: 100%; height: 100%;}
 	#player{ display: none;}
 	#player2{ display: none;}
 	main{ flex-direction: column;}
@@ -113,6 +127,8 @@ body
 	h4{font-size: 25px;}
 	.home-article{ font-size: 20px; max-width: 85%;}
 	article{ font-size: 20px; max-width: 100%;}
+	.mode a{ width: 100%; height: 100%;}
+	.mode img{ width: 100%; height: 100%;}
 	#player{ display: none;}
 	#player2{ display: none;}
 	main{ flex-direction: column;}
@@ -304,14 +320,8 @@ footer
 	width: 50%;
 }
 
-article
-{
-	font-size: 27px;
-}
-
 h4
 {
-	font-size: 60px;
 	text-align: center;
 	background-image: linear-gradient(red,green,blue);
 	color: #fff;
