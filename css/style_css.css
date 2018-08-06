@@ -96,7 +96,7 @@ body
 	h2{font-size: 30px;}
 	h4{font-size: 25px;}
 	.home-article{ font-size: 20px; max-width: 92%;}
-	article{ font-size: 20px; max-width: 100%;}
+	article{ font-size: 20px; max-width: 95%;}
 	#player{ display: none;}
 	#player2{ display: none;}
 	main{ flex-direction: column;}
@@ -112,7 +112,7 @@ body
 	h2{font-size: 25px;}
 	h4{font-size: 22px;}
 	.home-article{ font-size: 20px; max-width: 85%;}
-	article{ font-size: 20px; max-width: 100%;}
+	article{ font-size: 20px; max-width: 95%;}
 	#player{ display: none;}
 	#player2{ display: none;}
 	main{ flex-direction: column;}
