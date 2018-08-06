@@ -88,7 +88,7 @@ body
 	.menu{ font-size: 15px;}
 	ol a{ font-size: 15px;}
 	h2{font-size: 40px;}
-	h4{font-size: 40px;}
+	h4{font-size: 30px;}
 	.home-article{ font-size: 20px; max-width: 100%;}
 	article{ font-size: 20px; max-width: 100%;}
 	.mode a{ width: 100%; height: 100%;}
@@ -106,11 +106,15 @@ body
 	.menu{ font-size: 10px;}
 	ol a{ font-size: 10px;}
 	h2{font-size: 30px;}
-	h4{font-size: 30px;}
+	h4{font-size: 18px;}
 	.home-article{ font-size: 20px; max-width: 92%;}
+<<<<<<< HEAD
 	article{ font-size: 20px; max-width: 100%;}
 	.mode a{ width: 100%; height: 100%;}
 	.mode img{ width: 100%; height: 100%;}
+=======
+	article{ font-size: 15px; max-width: 100%;}
+>>>>>>> fea82e65a46d5fac523b3ba904bd3fac37bc4e86
 	#player{ display: none;}
 	#player2{ display: none;}
 	main{ flex-direction: column;}
@@ -124,11 +128,15 @@ body
 	.menu{ font-size: 10px; max-width: 29%;}
 	ol a{ font-size: 10px;}
 	h2{font-size: 25px;}
-	h4{font-size: 25px;}
+	h4{font-size: 18px;}
 	.home-article{ font-size: 20px; max-width: 85%;}
+<<<<<<< HEAD
 	article{ font-size: 20px; max-width: 100%;}
 	.mode a{ width: 100%; height: 100%;}
 	.mode img{ width: 100%; height: 100%;}
+=======
+	article{ font-size: 15px; max-width: 100%;}
+>>>>>>> fea82e65a46d5fac523b3ba904bd3fac37bc4e86
 	#player{ display: none;}
 	#player2{ display: none;}
 	main{ flex-direction: column;}
