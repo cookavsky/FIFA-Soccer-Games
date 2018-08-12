@@ -216,7 +216,7 @@ ul a
 	border-radius: 8px;
 }
 
-ul a :hover
+ul a:hover
 {
 	background-color: #11b11f;
 	color: #fff;
