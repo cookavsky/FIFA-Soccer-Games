@@ -1,48 +1,18 @@
-@media only screen and (max-width: 319px)
-{
-    .Tree {
-        height: 25vh;
-    }
-    .ImgTree {
-        height: 25vh;
-    }
-    .White {
-        height: 5vh;
-    }
-    footer {
-        flex-flow: column;
-    }
-    .Social {
-        width: calc(100vw - 4em);
+@media only screen and (max-width: 319px) {
+    header > a
+    {
+        width: 100%;
     }
 }
 
 /* ----------- iPhone 4 and 4S ----------- */
 
-/* Portrait and Landscape */
-@media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 480px)
-    and (-webkit-min-device-pixel-ratio: 2) {
-    .Social > div > img {
-        margin-right: 1em;
-    }
-}
 /* Portrait */
 @media only screen
     and (min-device-width: 320px)
     and (max-device-width: 480px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
-    .Skills > div > img {
-        height: 10vh;
-    }
-    footer {
-        flex-flow: row;
-    }
-    .Social > div > img {
-        height: 4vh;
-    }
 }
 
 /* Landscape */
@@ -51,31 +21,14 @@
     and (max-device-width: 480px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
-    body
+    .home
     {
-        font-size: 0.7rem;
+        flex-direction: row;
     }
-    .Tree {
-        height: 80vh;
-    }
-    .ImgTree {
-        height: 80vh;
-    }
-    .White {
-        height: 20vh;
-    }
-    .SelfPhoto {
-        width: 30vw;
-        height: 30vh;
-    }
-    .Portfolio > div {
-        height: 30vh;
-    }
-    .Skills > div > img {
-        height: 25vh;
-    }
-    .Social > div > img {
-        height: 8vh;
+    .home-article
+    {
+        flex-basis: 50%;
+        margin: 0 1em;
     }
 }
 
@@ -87,19 +40,6 @@
     and (max-device-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
-    .Tree {
-        height: 40vh;
-    }
-    .ImgTree {
-        height: 40vh;
-    }
-    .White {
-        height: 10vh;
-    }
-    .SelfPhoto {
-        width: 30vw;
-        height: 20vh;
-    }
 }
 
 /* Landscape */
@@ -108,32 +48,14 @@
     and (max-device-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
-    body
+    .home
     {
-        font-size: 0.8rem;
+        flex-direction: row;
     }
-    .Tree {
-        height: 90vh;
-    }
-    .ImgTree {
-        height: 90vh;
-    }
-    .White {
-        height: 20vh;
-    }
-    .SelfPhoto {
-        width: 40vw;
-        height: 50vh;
-    }
-    .Portfolio > div {
-        height: 50vh;
-    }
-    .Skills > div > img {
-        height: 25vh;
-    }
-    .Social > div > img {
-        height: 8vh;
-        margin-right: 1em;
+    .home-article
+    {
+        flex-basis: 50%;
+        margin: 0 1em;
     }
 }
 
@@ -145,9 +67,9 @@
     and (max-device-width: 667px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
-    body
+    header > a
     {
-        font-size: 0.6rem;
+        width: 100%;
     }
 }
 
@@ -157,69 +79,62 @@
     and (max-device-width: 667px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
-    body
+    .home
     {
-        font-size: 0.9rem;
+        flex-direction: row;
     }
-    .Tree {
-        height: 90vh;
-    }
-    .ImgTree {
-        height: 90vh;
-    }
-    .White {
-        height: 20vh;
-    }
-    .SelfPhoto {
-        width: 40vw;
-        height: 50vh;
-    }
-    .Portfolio > div {
-        height: 50vh;
-    }
-    .Skills > div > img {
-        height: 25vh;
-    }
-    .Social > div > img {
-        height: 8vh;
-        margin-right: 1em;
+    .home-article
+    {
+        flex-basis: 50%;
+        margin: 0 1em;
     }
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
+/* Portrait */
+@media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) {
+    header > a
+    {
+        width: 40%;
+    }
+    .CareerAndPc
+    {
+        height: 42vh;
+    }
+    .Mechanics
+    {
+        height: 50vh;
+    }
+    .About
+    {
+        height: 50vh;
+    }
+}
+
 /* Landscape */
 @media only screen
     and (min-device-width: 414px)
     and (max-device-width: 736px)
-    and (-webkit-min-device-pixel-ratio: 2)
+    and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: landscape) {
     body
     {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
-    .Tree {
-        height: 90vh;
+    .home
+    {
+        flex-direction: row;
+        height: 100vh;
     }
-    .ImgTree {
-        height: 90vh;
-    }
-    .White {
-        height: 20vh;
-    }
-    .SelfPhoto {
-        width: 40vw;
-        height: 50vh;
-    }
-    .Portfolio > div {
-        height: 50vh;
-    }
-    .Skills > div > img {
-        height: 25vh;
-    }
-    .Social > div > img {
-        height: 8vh;
-        margin-right: 1em;
+    .home-article
+    {
+        flex-basis: 50%;
+        margin: 0 1em;
     }
 }
 
@@ -231,22 +146,29 @@
     and (max-device-width: 812px)
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: portrait) {
-    body
+    header > a
     {
-        font-size: 0.55rem;
+        width: 60%;
     }
-    .Tree {
-        height: 30vh;
+    .home
+    {
+        height: 55vh;
     }
-    .ImgTree {
-        height: 30vh;
+    .Content
+    {
+        height: 45vh;
     }
-    .White {
-        height: 7vh;
+    .CareerAndPc
+    {
+        height: 48vh;
     }
-    .SelfPhoto {
-        width: 30vw;
-        height: 18vh;
+    .Mechanics
+    {
+        height: 56vh;
+    }
+    .About
+    {
+        height: 56vh;
     }
 }
 
@@ -254,55 +176,90 @@
 @media only screen
     and (min-device-width: 375px)
     and (max-device-width: 812px)
-    and (-webkit-min-device-pixel-ratio: 2)
+    and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: landscape) {
-    body
+}
+
+/* ----------- Galaxy S3 ----------- */
+
+/* Portrait and Landscape */
+@media screen
+    and (device-width: 320px)
+    and (device-height: 640px)
+    and (-webkit-device-pixel-ratio: 2) {
+    header > a
     {
-        font-size: 0.75rem;
+        width: 100%;
     }
-    .Tree {
-        height: 90vh;
+    .CareerAndPc
+    {
+        height: 36vh;
     }
-    .ImgTree {
-        height: 90vh;
+    .Mechanics
+    {
+        height: 46vh;
     }
-    .White {
-        height: 20vh;
+}
+
+/* ----------- Galaxy S6 ----------- */
+
+/* Portrait and Landscape */
+@media screen
+    and (device-width: 360px)
+    and (device-height: 640px)
+    and (-webkit-device-pixel-ratio: 4) {
+    header > a
+    {
+        width: 100%;
     }
-    .SelfPhoto {
-        width: 40vw;
-        height: 50vh;
+    .CareerAndPc
+    {
+        height: 36vh;
     }
-    .Portfolio > div {
-        height: 50vh;
-    }
-    .Skills > div > img {
-        height: 25vh;
-    }
-    .Social > div > img {
-        height: 8vh;
-        margin-right: 1em;
+    .Mechanics
+    {
+        height: 46vh;
     }
 }
 
 /* ----------- Windows Phone ----------- */
+
+/* Portrait and Landscape */
+@media screen
+    and (device-width: 480px)
+    and (device-height: 800px) {
+    .CareerAndPc
+    {
+        height: 46vh;
+    }
+    .Mechanics
+    {
+        height: 46vh;
+    }
+    .About
+    {
+        height: 46vh;
+    }
+    .Choose > a > img
+    {
+        height: 30vh;
+        width: 30vw;
+        margin: 1em;
+    }
+}
 
 /* Portrait */
 @media screen
     and (device-width: 480px)
     and (device-height: 800px)
     and (orientation: portrait) {
-    body
-    {
-        font-size: 0.8rem;
-    }
-    .SelfPhoto {
-        width: 40vw;
-        height: 25vh;
-    }
-    .Portfolio > div {
-        height: 25vh;
-    }
+}
+
+/* Landscape */
+@media screen
+    and (device-width: 480px)
+    and (device-height: 800px)
+    and (orientation: landscape) {
 }
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
@@ -314,19 +271,7 @@
     and (-webkit-min-device-pixel-ratio: 1) {
     body
     {
-        font-size: 1.1rem;
-    }
-    .Tree {
-        height: 60vh;
-    }
-    .ImgTree {
-        height: 60vh;
-    }
-    .White {
-        height: 20vh;
-    }
-    .Social > div > img {
-        margin-right: 1em;
+        font-size: 1.2em;
     }
 }
 
@@ -334,20 +279,15 @@
 @media only screen
     and (min-device-width: 768px)
     and (max-device-width: 1024px)
-    and (orientation: portrait)
-    and (-webkit-min-device-pixel-ratio: 1) {
-    .SelfPhoto {
-        width: 40vw;
-        height: 25vh;
+    and (-webkit-min-device-pixel-ratio: 1)
+    and (orientation: portrait) {
+    .Choose
+    {
+        flex-basis: 50%;
     }
-    .Portfolio > div {
-        height: 30vh;
-    }
-    .Skills > div > img {
-        height: 15vh;
-    }
-    .Social > div > img {
-        height: 5vh;
+    .CareerAndPc
+    {
+        height: 28vh;
     }
 }
 
@@ -355,20 +295,16 @@
 @media only screen
     and (min-device-width: 768px)
     and (max-device-width: 1024px)
-    and (orientation: landscape)
-    and (-webkit-min-device-pixel-ratio: 1) {
-    .SelfPhoto {
-        width: 40vw;
-        height: 50vh;
+    and (-webkit-min-device-pixel-ratio: 1)
+    and (orientation: landscape) {
+    .home
+    {
+        flex-direction: row;
     }
-    .Portfolio > div {
-        height: 50vh;
-    }
-    .Skills > div > img {
-        height: 25vh;
-    }
-    .Social > div > img {
-        height: 8vh;
+    .home-article
+    {
+        flex-basis: 50%;
+        margin: 0 1em;
     }
 }
 
@@ -381,259 +317,75 @@
     and (-webkit-min-device-pixel-ratio: 2) {
     body
     {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
-    .Tree {
-        height: 60vh;
+    .home
+    {
+        flex-direction: row;
     }
-    .ImgTree {
-        height: 60vh;
-    }
-    .White {
-        height: 20vh;
-    }
-    .SelfPhoto {
-        width: 40vw;
-        height: 30vh;
-    }
-    .Portfolio > div {
-        height: 30vh;
-    }
-    .Skills > div > img {
-        height: 15vh;
-    }
-    .Social > div > img {
-        height: 5vh;
-        margin-right: 1em;
+    .home-article
+    {
+        flex-basis: 50%;
+        margin: 0 1em;
     }
 }
 
-/* ----------- iPad Pro 12.9" ----------- */
+/* ----------- Kindle Fire HD 7" ----------- */
 
 /* Portrait and Landscape */
 @media only screen
-    and (min-device-width: 1024px)
-    and (max-device-width: 1366px)
-    and (-webkit-min-device-pixel-ratio: 2) {
-    body
-    {
-        font-size: 1.3rem;
-    }
-    .Tree {
-        height: 50vh;
-    }
-    .ImgTree {
-        height: 50vh;
-    }
-    .White {
-        height: 10vh;
-    }
-    .SelfPhoto {
-        width: 40vw;
-        height: 25vh;
-    }
-    .Skills > div > img {
-        height: 15vh;
-    }
-}
-
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen
-    and (min-device-width: 1366px)
-    and (max-device-width: 1366px)
-    and (orientation: landscape)
-    and (-webkit-min-device-pixel-ratio: 2) {
-    body
-    {
-        font-size: 1.3rem;
-    }
-    .Tree {
-        height: 80vh;
-    }
-    .ImgTree {
-        height: 80vh;
-    }
-    .White {
-        height: 20vh;
-    }
-    .SelfPhoto {
-        width: 40vw;
-        height: 40vh;
-    }
-    .Portfolio > div {
-        height: 50vh;
-    }
-    .Social > div > img {
-        height: 5vh;
-        margin-right: 1em;
-    }
-}
-
-/* ----------- Galaxy Tab 2 ----------- */
-
-/* Portrait and Landscape */
-@media
-    (min-device-width: 800px)
-    and (max-device-width: 1280px) {
-    .Tree {
-        height: 50vh;
-    }
-    .ImgTree {
-        height: 50vh;
-    }
-    .White {
-        height: 15vh;
-    }
-
-}
-
-/* ----------- Nexus 7 ----------- */
-
-/* Portrait and Landscape */
-@media screen
-    and (device-width: 601px)
-    and (device-height: 906px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (-webkit-max-device-pixel-ratio: 2) {
-    body
-    {
-        font-size: 0.8rem;
-    }
-    .Tree {
-        height: 50vh;
-    }
-    .ImgTree {
-        height: 50vh;
-    }
-    .White {
-        height: 15vh;
-    }
-    .SelfPhoto {
-        width: 40vw;
-        height: 20vh;
-    }
-    .Portfolio > div {
-        height: 25vh;
-    }
-    .Skills > div > img {
-        height: 10vh;
-    }
-    .Social > div > img {
-        height: 5vh;
-        margin-right: 1em;
-    }
-}
-
-/* ----------- Nexus 9 ----------- */
-
-/* Portrait and Landscape */
-@media screen
-    and (device-width: 1536px)
-    and (device-height: 2048px)
-    and (-webkit-min-device-pixel-ratio: 1.331)
-    and (-webkit-max-device-pixel-ratio: 1.332) {
-    body
-    {
-        font-size: 1.3rem;
-    }
-    .Tree {
-        height: 60vh;
-    }
-    .ImgTree {
-        height: 60vh;
-    }
-    .White {
-        height: 20vh;
-    }
-    .SelfPhoto {
-        width: 40vw;
-        height: 20vh;
-    }
-    .Portfolio > div {
-        height: 25vh;
-    }
-    .Skills > div > img {
-        height: 10vh;
-    }
-    .Social > div > img {
-        height: 5vh;
-        margin-right: 1em;
-    }
-}
-
-/* ----------- Kindle Fire HD 8.9" ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-    and (min-device-width: 1200px)
-    and (max-device-width: 1600px)
+    and (min-device-width: 800px)
+    and (max-device-width: 1280px)
     and (-webkit-min-device-pixel-ratio: 1.5) {
     body
     {
         font-size: 1.3rem;
     }
-    .Social > div > img {
-        height: 5vh;
-        margin-right: 1em;
+    .CareerAndPc
+    {
+        height: 36vh;
     }
 }
 
 /* Landscape */
 @media only screen
-    and (min-device-width: 1200px)
-    and (max-device-width: 1600px)
+    and (min-device-width: 800px)
+    and (max-device-width: 1280px)
+    and (-webkit-min-device-pixel-ratio: 1.5)
     and (orientation: landscape) {
-    .Tree {
-        height: 60vh;
+    .home
+    {
+        flex-direction: row;
     }
-    .ImgTree {
-        height: 60vh;
-    }
-    .White {
-        height: 20vh;
-    }
-    .SelfPhoto {
-        width: 40vw;
-        height: 30vh;
-    }
-    .Portfolio > div {
-        height: 40vh;
-    }
-    .Skills > div > img {
-        height: 20vh;
+    .home-article
+    {
+        flex-basis: 50%;
+        margin: 0 1em;
     }
 }
 
-/* Else Width */
-
-@media (min-width: 1281px) {
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+    and (min-device-width: 1200px)
+    and (max-device-width: 1600px)
+    and (-webkit-min-device-pixel-ratio: 1) {
     body
     {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
-    .Tree {
-        height: 80vh;
+    .home
+    {
+        flex-direction: row;
     }
-    .ImgTree {
-        height: 80vh;
+    .home-article
+    {
+        flex-basis: 50%;
+        margin: 0 1em;
     }
-    .White {
-        height: 20vh;
-    }
-    .SelfPhoto {
-        width: 40vw;
+    .Choose > a > img
+    {
         height: 40vh;
-    }
-    .Portfolio > div {
-        height: 50vh;
-    }
-    .Skills > div > img {
-        height: 20vh;
-    }
-    .Social > div > img {
-        height: 8vh;
-        margin-right: 1em;
+        width: 40vw;
+        margin: 1em;
     }
 }

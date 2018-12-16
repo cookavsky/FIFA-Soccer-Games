@@ -9,15 +9,21 @@ body
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: rgb(18, 92, 28);
 	color: black;
-	font-size: 1.3rem;
+    font-size: 0.5rem;
 }
 
 header
 {
 	display: flex;
+    justify-content: space-between;
 	flex-direction: row;
-	justify-content: space-between;
-	padding: 2.5em 5em;
+    align-items: center;
+    padding: 1em;
+}
+
+header > a
+{
+	height: 100%;
 }
 
 h1
@@ -28,16 +34,33 @@ h1
 .menu
 {
 	display: flex;
-	flex-flow: row;
-	justify-content: space-between;
-	margin: 0 2em;
+	text-align: center;
+    flex-direction: column-reverse;
+    margin: 1em;
+}
+
+aside > ul
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+aside > ul > li
+{
+    margin: 0.25em;
+    width: 100%;
+}
+
+aside > ul > li > a
+{
+    padding: 0.25em 0;
 }
 
 ol
 {
 	display: flex;
-	flex-direction: row;
-	align-items: baseline;
+    flex-flow: row;
 	list-style-type: none;
 }
 
@@ -49,7 +72,7 @@ ol a
 	background-color: #00a00f;
 	border: 2px solid #000;
 	border-radius: 8px;
-	padding: 0.25em 0.75em;
+    padding: 0.5em 0;
 }
 
 ol a:hover
@@ -60,13 +83,13 @@ ol a:hover
 
 ol > li
 {
-	margin-right: 0.25em;
+    width: 100%;
+    margin-left: 0.25em;
 }
 
 ol > li > ul
 {
 	list-style-type: none;
-	font-size: 0.9rem;
 }
 
 ul > li
@@ -95,28 +118,63 @@ ul a:hover
 	display: none;
 }
 
-.home
+.home, .Mode
 {
 	display: flex;
-	flex-direction: row;
 	text-align: center;
-	margin: 3em;
+    flex-direction: column;
+    margin: 2em;
 }
 
-.home-article, .GalleryMode
+.home-article
 {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	margin: 2.5em;
+}
+
+.home-article > img
+{
+    width: 50%;
+    height: 50%;
+}
+
+.GalleryMode
+{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.GalleryMode > img
+{
+    flex-basis: calc(50% - 1em);
+    width: calc(50% - 1em);
+    height: 10%;
+    margin: 0.5em;
+}
+
+.CareerAndPc, .Content, .About, .Mechanics
+{
+    margin: 5em 2.5em;
+}
+
+.More > a > p
+{
+    padding: 0.5em 1em;
+}
+
+article > p
+{
+    margin-bottom: 1em;
 }
 
 .More
 {
 	background-color: red;
-	width: 5vw;
-	margin-top: 2em;
-	padding: 0.5em 0.25em;
+	margin: 2em 0;
 	border-radius: 1em;
 }
 
@@ -129,64 +187,5 @@ a
 footer
 {
 	text-align: center;
-}
-
-article
-{
-	margin: 3em;
-}
-
-article > p
-{
-	margin-bottom: 2em;
-}
-
-.mode
-{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	text-align: center;
-}
-
-.mode > div
-{
-	flex-basis: 50%;
-}
-
-.mode > div > a > img
-{
-	height: 30vh;
-	width: 20vw;
-}
-
-.GalleryStage
-{
-	display: flex;
-	flex-flow: row wrap;
-	flex-grow: 1;
-	margin-right: 2em;
-}
-
-.GalleryStage > img
-{
-	flex-basis: 50%;
-	width: 50%;
-	height: 50%;
-}
-
-.GalleryMode > img
-{
-	height: 20%;
-	width: 100%;
-}
-
-.Content
-{
-	flex-basis: 100%;
-}
-
-.CareerAndPc
-{
-	height: 40vh;
+	margin-top: 1em;
 }
