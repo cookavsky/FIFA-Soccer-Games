@@ -1,43 +1,76 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
 
-body
-{
+body {
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: rgb(18, 92, 28);
 	color: black;
     font-size: 0.5rem;
 }
 
-header
-{
+header {
 	display: flex;
-    justify-content: space-between;
-	flex-direction: row;
+	flex-flow: row;
+	justify-content: center;
+	text-align: center;
     align-items: center;
     padding: 1em;
 }
 
-header > a
-{
-	height: 100%;
+.header-a, .header-a-logo {
+	height: 6em;
+	width: 6em;
+}
+
+nav {
+	margin-left: 1.5em;
 }
 
 h1
 {
+	margin: 0.25em 0;
 	text-transform: capitalize;
 }
 
-.menu
-{
+.nav-menu, .footer-menu {
 	display: flex;
-	text-align: center;
-    flex-direction: column-reverse;
-    margin: 1em;
+	flex-flow: row wrap;
+	margin-top: 0.5em;
 }
+
+.nav-menu-list {
+	cursor: pointer;
+	color: #ddd;
+	background-color: #00a00f;
+	border: 2px solid #000;
+	border-radius: 8px;
+	margin: 0.25em;
+    padding: 0.25em;
+}
+
+li {
+	list-style-type: none;
+}
+
+footer {
+	text-align: center;
+	padding: 1em;
+}
+
+.footer-menu-list {
+	display: block;
+	text-decoration: none;
+	color: #ddd;
+	background-color: #00600b;
+	border: 1px dashed #000;
+	border-radius: 8px;
+	padding: 0.25em;
+	margin: 0.25em;
+}
+
+/*
+
 
 aside > ul
 {
@@ -189,3 +222,4 @@ footer
 	text-align: center;
 	margin-top: 1em;
 }
+*/

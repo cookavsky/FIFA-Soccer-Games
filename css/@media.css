@@ -1,391 +1,53 @@
-@media only screen and (max-width: 319px) {
-    header > a
-    {
-        width: 100%;
-    }
+/*
+    ##Device = Monitors
+    ##Screen = 1920px to higher resolution desktops
+*/
+@media (min-width: 1601px) {
+}
+/*
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) and (max-width: 1600px) {
 }
 
-/* ----------- iPhone 4 and 4S ----------- */
+/*
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+*/
 
-/* Portrait */
-@media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 480px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: portrait) {
+@media (min-width: 1025px) and (max-width: 1280px) {
 }
 
-/* Landscape */
-@media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 480px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape) {
-    .home
-    {
-        flex-direction: row;
-    }
-    .home-article
-    {
-        flex-basis: 50%;
-        margin: 0 1em;
-    }
+/*
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
 }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/*
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+*/
 
-/* Portrait */
-@media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 568px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 }
 
-/* Landscape */
-@media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 568px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape) {
-    .home
-    {
-        flex-direction: row;
-    }
-    .home-article
-    {
-        flex-basis: 50%;
-        margin: 0 1em;
-    }
+/*
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
 }
 
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/*
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+*/
 
-/* Portrait */
-@media only screen
-    and (min-device-width: 375px)
-    and (max-device-width: 667px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: portrait) {
-    header > a
-    {
-        width: 100%;
-    }
-}
-
-/* Landscape */
-@media only screen
-    and (min-device-width: 375px)
-    and (max-device-width: 667px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape) {
-    .home
-    {
-        flex-direction: row;
-    }
-    .home-article
-    {
-        flex-basis: 50%;
-        margin: 0 1em;
-    }
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait */
-@media only screen
-    and (min-device-width: 414px)
-    and (max-device-width: 736px)
-    and (-webkit-min-device-pixel-ratio: 3)
-    and (orientation: portrait) {
-    header > a
-    {
-        width: 40%;
-    }
-    .CareerAndPc
-    {
-        height: 42vh;
-    }
-    .Mechanics
-    {
-        height: 50vh;
-    }
-    .About
-    {
-        height: 50vh;
-    }
-}
-
-/* Landscape */
-@media only screen
-    and (min-device-width: 414px)
-    and (max-device-width: 736px)
-    and (-webkit-min-device-pixel-ratio: 3)
-    and (orientation: landscape) {
-    body
-    {
-        font-size: 1rem;
-    }
-    .home
-    {
-        flex-direction: row;
-        height: 100vh;
-    }
-    .home-article
-    {
-        flex-basis: 50%;
-        margin: 0 1em;
-    }
-}
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait */
-@media only screen
-    and (min-device-width: 375px)
-    and (max-device-width: 812px)
-    and (-webkit-min-device-pixel-ratio: 3)
-    and (orientation: portrait) {
-    header > a
-    {
-        width: 60%;
-    }
-    .home
-    {
-        height: 55vh;
-    }
-    .Content
-    {
-        height: 45vh;
-    }
-    .CareerAndPc
-    {
-        height: 48vh;
-    }
-    .Mechanics
-    {
-        height: 56vh;
-    }
-    .About
-    {
-        height: 56vh;
-    }
-}
-
-/* Landscape */
-@media only screen
-    and (min-device-width: 375px)
-    and (max-device-width: 812px)
-    and (-webkit-min-device-pixel-ratio: 3)
-    and (orientation: landscape) {
-}
-
-/* ----------- Galaxy S3 ----------- */
-
-/* Portrait and Landscape */
-@media screen
-    and (device-width: 320px)
-    and (device-height: 640px)
-    and (-webkit-device-pixel-ratio: 2) {
-    header > a
-    {
-        width: 100%;
-    }
-    .CareerAndPc
-    {
-        height: 36vh;
-    }
-    .Mechanics
-    {
-        height: 46vh;
-    }
-}
-
-/* ----------- Galaxy S6 ----------- */
-
-/* Portrait and Landscape */
-@media screen
-    and (device-width: 360px)
-    and (device-height: 640px)
-    and (-webkit-device-pixel-ratio: 4) {
-    header > a
-    {
-        width: 100%;
-    }
-    .CareerAndPc
-    {
-        height: 36vh;
-    }
-    .Mechanics
-    {
-        height: 46vh;
-    }
-}
-
-/* ----------- Windows Phone ----------- */
-
-/* Portrait and Landscape */
-@media screen
-    and (device-width: 480px)
-    and (device-height: 800px) {
-    .CareerAndPc
-    {
-        height: 46vh;
-    }
-    .Mechanics
-    {
-        height: 46vh;
-    }
-    .About
-    {
-        height: 46vh;
-    }
-    .Choose > a > img
-    {
-        height: 30vh;
-        width: 30vw;
-        margin: 1em;
-    }
-}
-
-/* Portrait */
-@media screen
-    and (device-width: 480px)
-    and (device-height: 800px)
-    and (orientation: portrait) {
-}
-
-/* Landscape */
-@media screen
-    and (device-width: 480px)
-    and (device-height: 800px)
-    and (orientation: landscape) {
-}
-
-/* ----------- iPad 1, 2, Mini and Air ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-    and (min-device-width: 768px)
-    and (max-device-width: 1024px)
-    and (-webkit-min-device-pixel-ratio: 1) {
-    body
-    {
-        font-size: 1.2em;
-    }
-}
-
-/* Portrait */
-@media only screen
-    and (min-device-width: 768px)
-    and (max-device-width: 1024px)
-    and (-webkit-min-device-pixel-ratio: 1)
-    and (orientation: portrait) {
-    .Choose
-    {
-        flex-basis: 50%;
-    }
-    .CareerAndPc
-    {
-        height: 28vh;
-    }
-}
-
-/* Landscape */
-@media only screen
-    and (min-device-width: 768px)
-    and (max-device-width: 1024px)
-    and (-webkit-min-device-pixel-ratio: 1)
-    and (orientation: landscape) {
-    .home
-    {
-        flex-direction: row;
-    }
-    .home-article
-    {
-        flex-basis: 50%;
-        margin: 0 1em;
-    }
-}
-
-/* ----------- iPad Pro 10.5" ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-    and (min-device-width: 834px)
-    and (max-device-width: 1112px)
-    and (-webkit-min-device-pixel-ratio: 2) {
-    body
-    {
-        font-size: 1.4rem;
-    }
-    .home
-    {
-        flex-direction: row;
-    }
-    .home-article
-    {
-        flex-basis: 50%;
-        margin: 0 1em;
-    }
-}
-
-/* ----------- Kindle Fire HD 7" ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-    and (min-device-width: 800px)
-    and (max-device-width: 1280px)
-    and (-webkit-min-device-pixel-ratio: 1.5) {
-    body
-    {
-        font-size: 1.3rem;
-    }
-    .CareerAndPc
-    {
-        height: 36vh;
-    }
-}
-
-/* Landscape */
-@media only screen
-    and (min-device-width: 800px)
-    and (max-device-width: 1280px)
-    and (-webkit-min-device-pixel-ratio: 1.5)
-    and (orientation: landscape) {
-    .home
-    {
-        flex-direction: row;
-    }
-    .home-article
-    {
-        flex-basis: 50%;
-        margin: 0 1em;
-    }
-}
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen
-    and (min-device-width: 1200px)
-    and (max-device-width: 1600px)
-    and (-webkit-min-device-pixel-ratio: 1) {
-    body
-    {
-        font-size: 1.2rem;
-    }
-    .home
-    {
-        flex-direction: row;
-    }
-    .home-article
-    {
-        flex-basis: 50%;
-        margin: 0 1em;
-    }
-    .Choose > a > img
-    {
-        height: 40vh;
-        width: 40vw;
-        margin: 1em;
-    }
+@media (min-width: 320px) and (max-width: 480px) {
 }
