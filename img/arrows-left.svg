@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 39.774742 35.463882" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <radialGradient id="c" cx="24.837" cy="36.421" r="15.645" gradientTransform="matrix(1 0 0 .53672 0 16.873)" gradientUnits="userSpaceOnUse">
+   <stop offset="0"/>
+   <stop stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <radialGradient id="b" cx="19.701" cy="2.8969" r="17.171" gradientTransform="matrix(2.0467 0 0 1.5576 -55.546 -29.723)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <radialGradient id="a" cx="22.292" cy="32.798" r="16.956" gradientTransform="matrix(.84302 0 0 1.0202 -31.528 -31.793)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#729fcf" offset="0"/>
+   <stop stop-color="#3465a4" offset="1"/>
+  </radialGradient>
+ </defs>
+ <g transform="translate(31.293 26.945)">
+  <path transform="matrix(-1.2712 0 0 1.2712 20.167 -48.453)" d="m40.482 36.421a15.645 8.3969 0 1 1 -31.289 0 15.645 8.3969 0 1 1 31.289 0z" fill="url(#c)" fill-rule="evenodd" opacity=".29947"/>
+  <path d="m3.4626-17.678v16.994h-12.953v8.4825l-19.96-17 19.954-17.244v8.7725l12.959-0.0053z" fill="url(#a)" fill-rule="evenodd" stroke="#183868" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path d="m-10.039-25.197v8.0565h12.942v8.8845c-16.75-6.25-16.134 5.2947-31.384-0.95529l18.441-15.986z" fill="url(#b)" fill-rule="evenodd" opacity=".50802"/>
+  <path d="m2.4478-16.633v14.922h-12.985v7.3014l-17.322-14.796 17.338-14.905v7.4826l12.969-0.0049z" fill="none" opacity=".48128" stroke="#fff" stroke-miterlimit="10"/>
+ </g>
+</svg>
