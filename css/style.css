@@ -6,7 +6,8 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: black;
-    font-size: 0.5rem;
+	font-size: 0.6rem;
+	text-shadow: 1px 1px 1px black, 2px 2px 2px black;
 }
 
 header {
@@ -18,9 +19,72 @@ header {
     margin: 2em;
 }
 
-.header-a, .header-a-logo {
-	height: 6em;
+#EA_Sports2 {
 	width: 6em;
+	height: 6em;
+}
+
+#EA_Sports-Name {
+	transform-origin: center;
+	animation: Rotate 5s ease-in infinite;
+}
+
+.st0 {fill: url(#Circle-Moving_1_);}
+.st1 {
+	fill: #1B5BDD;
+	stroke: #000000;
+	stroke-miterlimit: 10;
+}
+.st2{fill: #FFFFFF;}
+.st3{fill:#FCFAFA;}
+.st4{fill:#F9F7F7;}
+.st5{fill:#F2F2F2;}
+.st6{fill:#F9F4F4;}
+
+@keyframes Rotate {
+	0% {
+		transform: rotateY(0deg);
+	} 5% {
+		transform: rotateY(36deg);
+	} 10% {
+		transform: rotateY(72deg);
+	} 15% {
+		transform: rotateY(108deg);
+	} 20% {
+		transform: rotateY(144deg);
+	} 25% {
+		transform: rotateY(188deg);
+	} 30% {
+		transform: rotateY(216deg);
+	} 35% {
+		transform: rotateY(252deg);
+	} 40% {
+		transform: rotateY(288deg);
+	} 45% {
+		transform: rotateY(324deg);
+	} 50% {
+		transform: rotateY(360deg);
+	} 55% {
+		transform: rotateY(324deg);
+	} 60% {
+		transform: rotateY(288deg);
+	} 65% {
+		transform: rotateY(252deg);
+	} 70% {
+		transform: rotateY(216deg);
+	} 75% {
+		transform: rotateY(180deg);
+	} 80% {
+		transform: rotateY(144deg);
+	} 85% {
+		transform: rotateY(108deg);
+	} 90% {
+		transform: rotateY(72deg);
+	} 95% {
+		transform: rotateY(36deg);
+	} 100% {
+		transform: rotateY(0deg);
+	}
 }
 
 nav {
@@ -44,10 +108,10 @@ h1
 	cursor: pointer;
 	color: #ddd;
 	background-color: #00a00f;
-	border: 2px solid #000;
+	border: 1px solid #000;
 	border-radius: 8px;
 	margin: 0.25em;
-    padding: 0.25em;
+    padding: 0.5em;
 }
 
 .Home {
@@ -58,7 +122,7 @@ h1
 }
 
 video {
-	width: calc(100% - 2em);
+	width: calc(80%);
 	height: 100%;
 	margin: 1em;
 }
@@ -100,15 +164,17 @@ video {
 }
 
 .Home-UT-Left, .Home-WK-Left, .Home-Mech-Left, .Home-About-Left {
+	cursor: pointer;
 	animation: GoUp 1.5s ease-in infinite;
 }
 
 .Home-UT-Right, .Home-WK-Right, .Home-Mech-Right, .Home-About-Right {
+	cursor: pointer;
 	animation: GoUp 1.5s ease-in infinite;
 }
 
 .Home-UT-1 {
-	background: url("../img/homeUT1.jpg") no-repeat;
+	background: url("../img/homeUT1.png") no-repeat;
 }.Home-UT-2 {
 	background: url("../img/homeUT2.jpg") no-repeat;
 }.Home-UT-3 {
@@ -116,9 +182,9 @@ video {
 }
 
 .Home-WK-1 {
-	background: url("../img/homeWK1.jpg") no-repeat;
-}.Home-WK-2 {
 	background: url("../img/homeWK2.jpg") no-repeat;
+}.Home-WK-2 {
+	background: url("../img/homeWK1.jpg") no-repeat;
 }.Home-WK-3 {
 	background: url("../img/homeWK3.jpg") no-repeat;
 }
@@ -137,20 +203,18 @@ video {
 
 .Home-UT-Intro, .Home-WK-Intro, .Home-Mech-Intro, .Home-About-Intro {
 	flex-basis: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	background-size: cover;
 	background-position: center;
+	min-height: 20em;
 	padding: 1em;
 }
 
-.Home-UT-Intro-Header {
+.Home-UT-Intro-Header > img, .Home-WK-Intro-Header > img {
 	width: 50%;
-	background-color: rgba(11, 51, 3, 0.5);
-	width: 50%;
-}
-
-.Home-UT-Intro-Header > img {
-	width: 10em;
-	height: 10em;
+	height: 100%;
 }
 
 li {
