@@ -7,16 +7,19 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: black;
 	font-size: 0.6rem;
-	text-shadow: 1px 1px 1px black, 2px 2px 2px black;
+	text-shadow: 1px 1px 1px grey, 2px 2px 2px grey;
 }
 
 header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: white;
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
 	text-align: center;
     align-items: center;
-    margin: 2em;
 }
 
 #EA_Sports2 {
@@ -91,9 +94,8 @@ nav {
 	margin-left: 1.5em;
 }
 
-h1
-{
-	margin: 0.25em 0;
+h1 {
+	margin: 1em 0;
 	text-transform: capitalize;
 }
 
@@ -106,115 +108,73 @@ h1
 
 .nav-menu-list {
 	cursor: pointer;
-	color: #ddd;
-	background-color: #00a00f;
-	border: 1px solid #000;
-	border-radius: 8px;
-	margin: 0.25em;
-    padding: 0.5em;
+	margin: 1em;
+}
+
+.nav-menu-list:hover {
+	color: #1B5BDD;
+}
+
+.list-activ {
+	border-top: 2px solid rgb(16, 209, 26);
+	margin-top: calc(1em - 2px);
 }
 
 .Home {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	color: white;
 }
 
 video {
-	width: calc(80%);
+	width: 100%;
 	height: 100%;
-	margin: 1em;
+	margin: 10em 0;
+}
+
+.Home-Container {
+	display: flex;
+	flex-direction: row;
+}
+
+.Home-Container-Text, .Home-Container-Photo {
+	flex-basis: 50%;
 }
 
 .Home-UT, .Home-WK, .Home-Mech, .Home-About {
-	display: flex;
-	flex-flow: row;
-	align-items: center;
+	margin: 4em 0;
+	height: 36em;
 }
 
-.Home-Left {
-	flex-basis: 10%;
-}
-
-.Home-Right {
-	flex-basis: 10%;
-}
-
-@keyframes GoUp {
-	0% {
-		transform: scale(1);
-	} 12.5% {
-		transform: scale(1.1);
-	} 25% {
-		transform: scale(1.2);
-	} 37.5% {
-		transform: scale(1.1);
-	} 50% {
-		transform: scale(1);
-	} 62.5% {
-		transform: scale(0.9);
-	} 75% {
-		transform: scale(0.8);
-	} 87.5% {
-		transform: scale(0.9);
-	} 100% {
-		transform: scale(1);
-	}
-}
-
-.Home-UT-Left, .Home-WK-Left, .Home-Mech-Left, .Home-About-Left {
-	cursor: pointer;
-	animation: GoUp 1.5s ease-in infinite;
-}
-
-.Home-UT-Right, .Home-WK-Right, .Home-Mech-Right, .Home-About-Right {
-	cursor: pointer;
-	animation: GoUp 1.5s ease-in infinite;
-}
-
-.Home-UT-1 {
-	background: url("../img/homeUT1.png") no-repeat;
-}.Home-UT-2 {
-	background: url("../img/homeUT2.jpg") no-repeat;
-}.Home-UT-3 {
-	background: url("../img/homeUT3.jpg") no-repeat;
-}
-
-.Home-WK-1 {
-	background: url("../img/homeWK2.jpg") no-repeat;
-}.Home-WK-2 {
-	background: url("../img/homeWK1.jpg") no-repeat;
-}.Home-WK-3 {
-	background: url("../img/homeWK3.jpg") no-repeat;
-}
-
-.Home-Mech-1 {
-	background: url("../img/homeMech1.jpg") no-repeat;
-}.Home-Mech-2 {
-	background: url("../img/homeMech2.jpg") no-repeat;
-}.Home-Mech-3 {
-	background: url("../img/homeMech3.jpg") no-repeat;
-}
-
-.Home-About-1 {
-	background: url("../img/homeabout.jpg") no-repeat;
-}
-
-.Home-UT-Intro, .Home-WK-Intro, .Home-Mech-Intro, .Home-About-Intro {
-	flex-basis: 80%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	background-size: cover;
-	background-position: center;
-	min-height: 20em;
-	padding: 1em;
+.Home-UT-Intro-Header, .Home-WK-Intro-Header {
+	text-align: center;
 }
 
 .Home-UT-Intro-Header > img, .Home-WK-Intro-Header > img {
+	margin: 2em;
 	width: 50%;
-	height: 100%;
+}
+
+.Home-UT-BG {
+	background: url("../img/homeUT.png") no-repeat;
+}
+
+.Home-WK-BG {
+	background: url("../img/homeWK.jpg") no-repeat;
+}
+
+.Home-Mech-BG {
+	background: url("../img/homeMech.jpg") no-repeat;
+}
+
+.Home-About-BG {
+	background: url("../img/homeabout.jpg") no-repeat;
+}
+
+.Home-BG {
+	background-size: cover;
+	background-position: center;
+	height: 40em;
 }
 
 li {
@@ -233,6 +193,6 @@ footer {
 	background-color: #00600b;
 	border: 1px dashed #000;
 	border-radius: 8px;
-	padding: 0.25em;
+	padding: 0.5em;
 	margin: 0.25em;
 }

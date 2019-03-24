@@ -51,3 +51,16 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
 }
+
+@media (max-width: 320px) {
+    .Home-Container-Text, .Home-Container-Photo {
+	flex-basis: 100%;
+    }
+    .Home-Container-Photo {
+        display: none;
+    }
+    .Home-UT, .Home-WK, .Home-Mech, .Home-About {
+	margin: 4em 0;
+	height: inherit;
+}
+}
