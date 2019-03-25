@@ -6,7 +6,7 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: black;
-	font-size: 0.6rem;
+	font-size: 0.75rem;
 	text-shadow: 1px 1px 1px grey, 2px 2px 2px grey;
 }
 
@@ -94,8 +94,8 @@ nav {
 	margin-left: 1.5em;
 }
 
-h1 {
-	margin: 1em 0;
+h1, h2 {
+	margin: 0.5em 0;
 	text-transform: capitalize;
 }
 
@@ -120,7 +120,7 @@ h1 {
 	margin-top: calc(1em - 2px);
 }
 
-.Home {
+.Home, .ModeGame, .Stage {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -132,26 +132,26 @@ video {
 	margin: 10em 0;
 }
 
-.Home-Container {
+.Home-Container, .ModeGame-Container, .Stage-Container {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
+	margin: 10em 0;
 }
 
-.Home-Container-Text, .Home-Container-Photo {
+.Home-Container-Text, .Home-Container-Photo, .ModeGame-Container-Text, .ModeGame-Container-Photo, .Stage-Container-Text, .Stage-Container-Photo {
 	flex-basis: 50%;
 }
 
-.Home-UT, .Home-WK, .Home-Mech, .Home-About {
-	margin: 4em 0;
-	height: 36em;
+.Home-WK, .Home-Mech, .ModeGame-WK, .ModeGame-Journey, .Stage-Xbox {
+	margin: 20em 0;
 }
 
-.Home-UT-Intro-Header, .Home-WK-Intro-Header {
+.Home-UT-Intro, .Home-WK-Intro {
 	text-align: center;
 }
 
-.Home-UT-Intro-Header > img, .Home-WK-Intro-Header > img {
-	margin: 2em;
+.Home-UT-Intro > img, .Home-WK-Intro > img {
+	margin-bottom: 2em;
 	width: 50%;
 }
 
@@ -172,9 +172,12 @@ video {
 }
 
 .Home-BG {
+	height: 40em;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 10em;
 	background-size: cover;
 	background-position: center;
-	height: 40em;
 }
 
 li {
@@ -195,4 +198,8 @@ footer {
 	border-radius: 8px;
 	padding: 0.5em;
 	margin: 0.25em;
+}
+
+.off {
+	display: none;
 }

@@ -49,18 +49,18 @@
     ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 401px) and (max-width: 480px) {
 }
 
-@media (max-width: 320px) {
-    .Home-Container-Text, .Home-Container-Photo {
-	flex-basis: 100%;
+@media (max-width: 400px) {
+    .Home-Container-Text, .ModeGame-Container-Text, .Stage-Container-Text {
+	    flex-basis: 100%;
     }
-    .Home-Container-Photo {
+    .Home-Container-Photo, .ModeGame-Container-Photo, .Stage-Container-Photo {
         display: none;
     }
     .Home-UT, .Home-WK, .Home-Mech, .Home-About {
 	margin: 4em 0;
 	height: inherit;
-}
+    }
 }
