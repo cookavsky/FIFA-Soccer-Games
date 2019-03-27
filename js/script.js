@@ -38,21 +38,13 @@ const changeMenu = () => {
     }
 };
 
-const HomeUT = document.querySelectorAll(".Home-UT");
-const HomeWK = document.querySelectorAll(".Home-WK");
-const HomeMech = document.querySelectorAll(".Home-Mech");
-const HomeAbout = document.querySelectorAll(".Home-About");
+const body = document.querySelectorAll("body");
 const body = document.querySelectorAll("body");
 
-console.log(HomeUT[0].offsetTop, HomeWK[0].offsetTop, HomeMech[0].offsetTop, HomeAbout[0].offsetTop);
+const animate = () => {
+    console.log(window.innerHeight, window.scrollY, body[0].clientHeight);
 
-const bodymouse = () => {
-    for(let i = 0; i < body.length; i++) {
-        body[i].addEventListener("click", () => {
-            console.log(event.pageY);
-        })
-    }
 };
 
 changeMenu();
-bodymouse();
+animate();

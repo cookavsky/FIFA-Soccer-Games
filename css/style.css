@@ -4,10 +4,11 @@
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
 	color: black;
-	font-size: 0.75rem;
 	text-shadow: 1px 1px 1px grey, 2px 2px 2px grey;
+	font-size: 0.75rem;
+	font-family: Arial, Helvetica, sans-serif;
+	scroll-behavior: smooth;
 }
 
 header {
@@ -103,7 +104,6 @@ h1, h2 {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin-top: 0.5em;
 }
 
 .nav-menu-list {
@@ -121,63 +121,156 @@ h1, h2 {
 }
 
 .Home, .ModeGame, .Stage {
+	animation: Opacity 3s ease;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
+	color: white;
+	text-shadow: 1px 1px 1px black, 2px 2px 2px black;
 }
 
-video {
-	width: 100%;
-	height: 100%;
-	margin: 10em 0;
-}
-
-.Home-Container, .ModeGame-Container, .Stage-Container {
+.Home-UEFA, .Home-UT, .Home-WK, .Home-Mech, .Home-About, .ModeGame-UT, .ModeGame-WK, .ModeGame-Journey, .ModeGame-Career, .Stage-PS4, .Stage-XBOX, .Stage-PC {
 	display: flex;
 	flex-flow: row wrap;
-	margin: 10em 0;
 }
 
-.Home-Container-Text, .Home-Container-Photo, .ModeGame-Container-Text, .ModeGame-Container-Photo, .Stage-Container-Text, .Stage-Container-Photo {
+.Home-Mech-Intro, .Home-About-Intro, .ModeGame-WK-Intro, .ModeGame-Journey-Intro, .ModeGame-Career-Intro, .Stage-XBOX-Intro, .Stage-PC-Intro {
+	align-self: center;
 	flex-basis: 50%;
 }
 
-.Home-WK, .Home-Mech, .ModeGame-WK, .ModeGame-Journey, .Stage-Xbox {
-	margin: 20em 0;
+.ModeGame-UT-Intro {
+	animation: LeftTransform 2s ease;
+	align-self: center;
+	flex-basis: 50%;
+}
+
+.Stage-PS4-Intro {
+	animation: RightTransform 2s ease;
+	align-self: center;
+	flex-basis: 50%;
+}
+
+.Home-UEFA-Intro {
+	flex-basis: calc(50% - 2em);
+	animation: LeftTransform 2s ease;
+	text-align: center;
+	align-self: center;
+	margin-right: 2em;
 }
 
 .Home-UT-Intro, .Home-WK-Intro {
+	flex-basis: 50%;
 	text-align: center;
+	align-self: center;
 }
 
-.Home-UT-Intro > img, .Home-WK-Intro > img {
-	margin-bottom: 2em;
+.Home-UEFA-Intro > img {
 	width: 50%;
 }
 
+video {
+	animation: Opacity 3s ease;
+	width: 50%;
+	height: 100%;
+}
+
+.Home-UT-Header > img, .Home-WK-Header > img {
+	width: 30%;
+}
+
+.Home-Mech-Header > img, .Home-About-Header > img, .ModeGame-WK-Header > img, .ModeGame-Journey-Header > img, .ModeGame-Career-Header > img, .Stage-PS4-Header > img, .Stage-XBOX-Header > img, .Stage-PC-Header > img {
+	width: 80%;
+	height: 30em;
+}
+
+.ModeGame-UT-Header > img {
+	animation: LeftBackRotate 2s ease;
+	width: 80%;
+	height: 30em;
+}
+
+.Stage-PS4-Header > img {
+	animation: RightBackRotate 2s ease;
+	width: 80%;
+	height: 30em;
+}
+
+.Home-UT-Header, .Home-Mech-Header, .ModeGame-WK-Header, .ModeGame-Journey-Header, .Stage-PS4-Header, .Stage-XBOX-Header, .Stage-PC-Header {
+	flex-basis: 50%;
+	text-align: left;
+	align-self: center;
+}
+
+.Home-WK-Header, .Home-About-Header, .ModeGame-UT-Header, .ModeGame-Career-Header {
+	flex-basis: 50%;
+	text-align: right;
+	align-self: center;
+}
+
 .Home-UT-BG {
-	background: url("../img/homeUT.png") no-repeat;
+	background: url("../img/homeUT.jpg") no-repeat;
+	background-position: center;
 }
 
 .Home-WK-BG {
 	background: url("../img/homeWK.jpg") no-repeat;
+	background-position: center;
 }
 
 .Home-Mech-BG {
 	background: url("../img/homeMech.jpg") no-repeat;
+	background-position: top;
 }
 
 .Home-About-BG {
 	background: url("../img/homeabout.jpg") no-repeat;
+	background-position: center;
 }
 
-.Home-BG {
-	height: 40em;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 10em;
-	background-size: cover;
+.Home-UEFA-BG {
+	background: url("../img/homeUefa.jpg") no-repeat;
 	background-position: center;
+}
+
+.ModeGame-UT-BG {
+	background: url("../img/ModeGame-UT.jpg") no-repeat;
+	background-position: center;
+}
+
+.ModeGame-WK-BG {
+	background: url("../img/ModeGame-WK.jpg") no-repeat;
+	background-position: center;
+}
+
+.ModeGame-Journey-BG {
+	background: url("../img/ModeGame-Journey.jpg") no-repeat;
+	background-position: center;
+}
+
+.ModeGame-Career-BG {
+	background: url("../img/ModeGame-Career.jpg") no-repeat;
+	background-position: center;
+}
+
+.Stage-PS4-BG {
+	background: url("../img/Stage-PS4.jpg") no-repeat;
+	background-position: center;
+}
+
+.Stage-XBOX-BG {
+	background: url("../img/Stage-Xbox.jpg") no-repeat;
+	background-position: center;
+}
+
+.Stage-PC-BG {
+	background: url("../img/Stage-PC.jpg") no-repeat;
+	background-position: center;
+}
+
+.Background {
+	padding: 5em;
+	background-size: cover;
 }
 
 li {
@@ -202,4 +295,48 @@ footer {
 
 .off {
 	display: none;
+}
+
+@keyframes Opacity {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
+
+@keyframes LeftTransform {
+	from {
+		transform: translateX(-60em);
+		opacity: 0;
+	} to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes RightTransform {
+	from {
+		transform: translateX(60em);
+		opacity: 0;
+	} to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes LeftBackRotate {
+	from {
+		transform: rotateZ(15deg);
+	} to {
+		transform: rotateZ(0);
+	}
+}
+
+@keyframes RightBackRotate {
+	from {
+		transform: rotateZ(15deg);
+	} to {
+		transform: rotateZ(0);
+	}
 }

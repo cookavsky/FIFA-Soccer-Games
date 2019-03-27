@@ -3,64 +3,43 @@
     ##Screen = 1920px to higher resolution desktops
 */
 @media (min-width: 1601px) {
+    .Background {
+	    padding: 10em;
+    }
 }
 /*
     ##Device = Desktops
     ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) and (max-width: 1600px) {
-}
-
-/*
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-}
-
-/*
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-}
-
-/*
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-}
-
-/*
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-}
-
-/*
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 401px) and (max-width: 480px) {
+@media (min-width: 401px) and (max-width: 767px) {
+    .Home-UT-Intro, .Home-Mech-Intro, .ModeGame-WK-Intro, .ModeGame-Journey-Intro, .Stage-PS4-Intro, .Stage-XBOX-Intro, .Stage-PC-Intro, .Home-UT-Header, .Home-WK-Header, .Home-Mech-Header, .Home-About-Header, .ModeGame-UT-Header, .ModeGame-WK-Header, .ModeGame-Journey-Header, .ModeGame-Career-Header, .Stage-PS4-Header, .Stage-XBOX-Header, .Stage-PC-Header {
+	    flex-basis: 100%;
+    }
+    .Home-UEFA-Intro, .Home-WK-Intro, .Home-About-Intro, .ModeGame-UT-Intro, .ModeGame-Career-Intro {
+        flex-basis: 100%;
+        margin-bottom: 1em;
+    }
+    video, .Home-Mech-Header > img, .Home-About-Header > img, .ModeGame-UT-Header > img, .ModeGame-WK-Header > img, .ModeGame-Journey-Header > img, .ModeGame-Career-Header > img, .Stage-PS4-Header > img, .Stage-XBOX-Header > img, .Stage-PC-Header > img {
+	    width: 100%;
+	    height: 100%;
+    }
 }
 
 @media (max-width: 400px) {
-    .Home-Container-Text, .ModeGame-Container-Text, .Stage-Container-Text {
+    .Home-UT-Intro, .Home-Mech-Intro, .ModeGame-WK-Intro, .ModeGame-Journey-Intro, .Stage-PS4-Intro, .Stage-XBOX-Intro, .Stage-PC-Intro, .Home-UT-Header, .Home-WK-Header, .Home-Mech-Header, .Home-About-Header, .ModeGame-UT-Header, .ModeGame-WK-Header, .ModeGame-Journey-Header, .ModeGame-Career-Header, .Stage-PS4-Header, .Stage-XBOX-Header, .Stage-PC-Header {
 	    flex-basis: 100%;
     }
-    .Home-Container-Photo, .ModeGame-Container-Photo, .Stage-Container-Photo {
-        display: none;
+    .Home-UEFA-Intro, .Home-WK-Intro, .Home-About-Intro, .ModeGame-UT-Intro, .ModeGame-Career-Intro {
+        flex-basis: 100%;
+        margin-bottom: 1em;
     }
-    .Home-UT, .Home-WK, .Home-Mech, .Home-About {
-	margin: 4em 0;
-	height: inherit;
+    video, .Home-Mech-Header > img, .Home-About-Header > img, .ModeGame-UT-Header > img, .ModeGame-WK-Header > img, .ModeGame-Journey-Header > img, .ModeGame-Career-Header > img, .Stage-PS4-Header > img, .Stage-XBOX-Header > img, .Stage-PC-Header > img {
+	    width: 100%;
+	    height: 100%;
+    }
+    .Background {
+	    padding: 2em;
     }
 }
+
