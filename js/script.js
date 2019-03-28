@@ -207,88 +207,86 @@ const removeAnimate = () => {
 };
 
 const AnimateScroll = () => {
-    body[0].addEventListener("wheel", () => {
+    window.addEventListener("scroll", () => {
         let currentScroll = window.scrollY;
         let windowHeight = window.innerHeight + currentScroll;
-        if (event.deltaY > 0) {
             if (Home[0].className === "Home") {
-                let HomeUTText = HomeUTIntro[0].offsetTop + 150;
-                let HomeUTImg = HomeUTHeader[0].offsetTop + 150;
-                let HomeWKText = HomeWKIntro[0].offsetTop + 150;
-                let HomeWKImg = HomeWKHeader[0].offsetTop + 150;
-                let HomeMechText = HomeMechIntro[0].offsetTop + 150;
-                let HomeMechImg = HomeMechHeader[0].offsetTop + 150;
-                let HomeAboutText = HomeAboutIntro[0].offsetTop + 150;
-                let HomeAboutImg = HomeAboutHeader[0].offsetTop + 150;
-                if (windowHeight >= HomeUTText) {
-                    HomeUTIntro[0].classList.add("Opacity");
-                    HomeUTIntro[0].style.visibility = "visible";
-                } if (windowHeight >= HomeUTImg) {
-                    HomeUTHeader[0].classList.add("FadeUp");
-                    HomeUTHeader[0].style.visibility = "visible";
-                } if (windowHeight >= HomeWKText) {
-                    HomeWKIntro[0].classList.add("Opacity");
-                    HomeWKIntro[0].style.visibility = "visible";
-                } if (windowHeight >= HomeWKImg) {
-                    HomeWKHeader[0].classList.add("FadeUp");
-                    HomeWKHeader[0].style.visibility = "visible";
-                } if (windowHeight >= HomeMechText) {
-                    HomeMechIntro[0].classList.add("RightTransform");
-                    HomeMechIntro[0].style.visibility = "visible";
-                } if (windowHeight >= HomeMechImg) {
-                    HomeMechHeader[0].classList.add("RightRotate360");
-                    HomeMechHeader[0].style.visibility = "visible";
-                } if (windowHeight >= HomeAboutText) {
-                    HomeAboutIntro[0].classList.add("LeftTransform");
-                    HomeAboutIntro[0].style.visibility = "visible";
-                } if (windowHeight >= HomeAboutImg) {
-                    HomeAboutHeader[0].classList.add("LeftRotate360");
-                    HomeAboutHeader[0].style.visibility = "visible";
-                }
-            } else if (ModeGame[0].className === "ModeGame") {
-                let ModeGameWKText = ModeGameWKIntro[0].offsetTop + 150;
-                let ModeGameWKImg = ModeGameWKHeader[0].offsetTop + 150;
-                let ModeGameJourneyText = ModeGameJourneyIntro[0].offsetTop + 150;
-                let ModeGameJourneyImg = ModeGameJourneyHeader[0].offsetTop + 150;
-                let ModeGameCareerText = ModeGameCareerIntro[0].offsetTop + 150;
-                let ModeGameCareerImg = ModeGameCareerHeader[0].offsetTop + 150;
-                if (windowHeight >= ModeGameWKText) {
-                    ModeGameWKIntro[0].classList.add("ZoomIn");
-                    ModeGameWKIntro[0].style.visibility = "visible";
-                } if (windowHeight >= ModeGameWKImg) {
-                    ModeGameWKHeader[0].classList.add("RightSkew");
-                    ModeGameWKHeader[0].style.visibility = "visible";
-                } if (windowHeight >= ModeGameJourneyText) {
-                    ModeGameJourneyIntro[0].classList.add("ZoomOut");
-                    ModeGameJourneyIntro[0].style.visibility = "visible";
-                } if (windowHeight >= ModeGameJourneyImg) {
-                    ModeGameJourneyHeader[0].classList.add("LeftSkew");
-                    ModeGameJourneyHeader[0].style.visibility = "visible";
-                } if (windowHeight >= ModeGameCareerText) {
-                    ModeGameCareerIntro[0].classList.add("Opacity");
-                    ModeGameCareerIntro[0].style.visibility = "visible";
-                } if (windowHeight >= ModeGameCareerImg) {
-                    ModeGameCareerHeader[0].classList.add("LeftTransform");
-                    ModeGameCareerHeader[0].style.visibility = "visible";
-                }
-            } else if (Stage[0].className === "Stage") {
-                let StageXBOXText = StageXBOXIntro[0].offsetTop + 150;
-                let StageXBOXImg = StageXBOXHeader[0].offsetTop + 150;
-                let StagePCText = StagePCIntro[0].offsetTop + 150;
-                let StagePCImg = StagePCHeader[0].offsetTop + 150;
-                if (windowHeight >= StageXBOXText) {
-                    StageXBOXIntro[0].classList.add("Opacity");
-                    StageXBOXIntro[0].style.visibility = "visible";
-                } if (windowHeight >= StageXBOXImg) {
-                    StageXBOXHeader[0].classList.add("FlipLeft");
-                    StageXBOXHeader[0].style.visibility = "visible";
-                } if (windowHeight >= StagePCText) {
-                    StagePCIntro[0].classList.add("Opacity");
-                    StagePCIntro[0].style.visibility = "visible";
-                } if (windowHeight >= StagePCImg) {
-                    StagePCHeader[0].classList.add("FlipUp");
-                    StagePCHeader[0].style.visibility = "visible";
-                }
+            let HomeUTText = HomeUTIntro[0].offsetTop + 150;
+            let HomeUTImg = HomeUTHeader[0].offsetTop + 150;
+            let HomeWKText = HomeWKIntro[0].offsetTop + 150;
+            let HomeWKImg = HomeWKHeader[0].offsetTop + 150;
+            let HomeMechText = HomeMechIntro[0].offsetTop + 150;
+            let HomeMechImg = HomeMechHeader[0].offsetTop + 150;
+            let HomeAboutText = HomeAboutIntro[0].offsetTop + 150;
+            let HomeAboutImg = HomeAboutHeader[0].offsetTop + 150;
+            if (windowHeight >= HomeUTText) {
+                HomeUTIntro[0].classList.add("Opacity");
+                HomeUTIntro[0].style.visibility = "visible";
+            } if (windowHeight >= HomeUTImg) {
+                HomeUTHeader[0].classList.add("FadeUp");
+                HomeUTHeader[0].style.visibility = "visible";
+            } if (windowHeight >= HomeWKText) {
+                HomeWKIntro[0].classList.add("Opacity");
+                HomeWKIntro[0].style.visibility = "visible";
+            } if (windowHeight >= HomeWKImg) {
+                HomeWKHeader[0].classList.add("FadeUp");
+                HomeWKHeader[0].style.visibility = "visible";
+            } if (windowHeight >= HomeMechText) {
+                HomeMechIntro[0].classList.add("RightTransform");
+                HomeMechIntro[0].style.visibility = "visible";
+            } if (windowHeight >= HomeMechImg) {
+                HomeMechHeader[0].classList.add("RightRotate360");
+                HomeMechHeader[0].style.visibility = "visible";
+            } if (windowHeight >= HomeAboutText) {
+                HomeAboutIntro[0].classList.add("LeftTransform");
+                HomeAboutIntro[0].style.visibility = "visible";
+            } if (windowHeight >= HomeAboutImg) {
+                HomeAboutHeader[0].classList.add("LeftRotate360");
+                HomeAboutHeader[0].style.visibility = "visible";
+            }
+        } else if (ModeGame[0].className === "ModeGame") {
+            let ModeGameWKText = ModeGameWKIntro[0].offsetTop + 150;
+            let ModeGameWKImg = ModeGameWKHeader[0].offsetTop + 150;
+            let ModeGameJourneyText = ModeGameJourneyIntro[0].offsetTop + 150;
+            let ModeGameJourneyImg = ModeGameJourneyHeader[0].offsetTop + 150;
+            let ModeGameCareerText = ModeGameCareerIntro[0].offsetTop + 150;
+            let ModeGameCareerImg = ModeGameCareerHeader[0].offsetTop + 150;
+            if (windowHeight >= ModeGameWKText) {
+                ModeGameWKIntro[0].classList.add("ZoomIn");
+                ModeGameWKIntro[0].style.visibility = "visible";
+            } if (windowHeight >= ModeGameWKImg) {
+                ModeGameWKHeader[0].classList.add("RightSkew");
+                ModeGameWKHeader[0].style.visibility = "visible";
+            } if (windowHeight >= ModeGameJourneyText) {
+                ModeGameJourneyIntro[0].classList.add("ZoomOut");
+                ModeGameJourneyIntro[0].style.visibility = "visible";
+            } if (windowHeight >= ModeGameJourneyImg) {
+                ModeGameJourneyHeader[0].classList.add("LeftSkew");
+                ModeGameJourneyHeader[0].style.visibility = "visible";
+            } if (windowHeight >= ModeGameCareerText) {
+                ModeGameCareerIntro[0].classList.add("Opacity");
+                ModeGameCareerIntro[0].style.visibility = "visible";
+            } if (windowHeight >= ModeGameCareerImg) {
+                ModeGameCareerHeader[0].classList.add("LeftTransform");
+                ModeGameCareerHeader[0].style.visibility = "visible";
+            }
+        } else if (Stage[0].className === "Stage") {
+            let StageXBOXText = StageXBOXIntro[0].offsetTop + 150;
+            let StageXBOXImg = StageXBOXHeader[0].offsetTop + 150;
+            let StagePCText = StagePCIntro[0].offsetTop + 150;
+            let StagePCImg = StagePCHeader[0].offsetTop + 150;
+            if (windowHeight >= StageXBOXText) {
+                StageXBOXIntro[0].classList.add("Opacity");
+                StageXBOXIntro[0].style.visibility = "visible";
+            } if (windowHeight >= StageXBOXImg) {
+                StageXBOXHeader[0].classList.add("FlipLeft");
+                StageXBOXHeader[0].style.visibility = "visible";
+            } if (windowHeight >= StagePCText) {
+                StagePCIntro[0].classList.add("Opacity");
+                StagePCIntro[0].style.visibility = "visible";
+            } if (windowHeight >= StagePCImg) {
+                StagePCHeader[0].classList.add("FlipUp");
+                StagePCHeader[0].style.visibility = "visible";
             }
         }
     });
