@@ -139,6 +139,26 @@ h1, h2 {
 	flex-basis: 50%;
 }
 
+@keyframes LeftTransform {
+	from {
+		transform: translateX(-60em);
+		opacity: 0;
+	} to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes RightTransform {
+	from {
+		transform: translateX(60em);
+		opacity: 0;
+	} to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
 .ModeGame-UT-Intro {
 	animation: LeftTransform 2s ease;
 	align-self: center;
@@ -182,6 +202,22 @@ video {
 .Home-Mech-Header > img, .Home-About-Header > img, .ModeGame-WK-Header > img, .ModeGame-Journey-Header > img, .ModeGame-Career-Header > img, .Stage-PS4-Header > img, .Stage-XBOX-Header > img, .Stage-PC-Header > img {
 	width: 80%;
 	height: 30em;
+}
+
+@keyframes LeftBackRotate {
+	from {
+		transform: rotateZ(15deg);
+	} to {
+		transform: rotateZ(0);
+	}
+}
+
+@keyframes RightBackRotate {
+	from {
+		transform: rotateZ(15deg);
+	} to {
+		transform: rotateZ(0);
+	}
 }
 
 .ModeGame-UT-Header > img {
@@ -297,6 +333,53 @@ footer {
 	display: none;
 }
 
+.FadeUp {
+	animation: FadeUp 1s cubic-bezier(.455, .03, .515, .955);
+}
+.Opacity {
+	animation: Opacity 2s cubic-bezier(.39, .575, .565, 1);
+}
+.RightTransform {
+	animation: RightTransform 2s cubic-bezier(.250, .100, .250, 1);
+}
+.RightRotate360 {
+	animation: RightRotate360 1s cubic-bezier(.175, .885, .32, 1.275);
+}
+.LeftRotate360 {
+	animation: LeftRotate360 1s cubic-bezier(.175, .885, .32, 1.275);
+}
+.LeftTransform {
+	animation: LeftTransform 2s cubic-bezier(.250, .100, .250, 1);
+}
+.RightSkew {
+	animation: RightSkew 1s cubic-bezier(.47, 0, .745, .715);
+}
+.ZoomIn {
+	animation: ZoomIn 1s cubic-bezier(.445, .05, .55, .95);
+}
+.LeftSkew {
+	animation: LeftSkew 1s cubic-bezier(.445, .05, .55, .95);
+}
+.ZoomOut {
+	animation: ZoomOut 1s cubic-bezier(.445, .05, .55, .95);
+}
+.FlipLeft {
+	animation: FlipLeft 1s cubic-bezier(.25, .46, .45, .94);
+}
+.FlipUp {
+	animation: FlipUp 1s cubic-bezier(.250, .250, .750, .750);
+}
+
+@keyframes FadeUp {
+	0% {
+      	transform: translate3d(0, -100px, 0);
+		opacity: 0;
+	} 100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
 @keyframes Opacity {
 	from {
 		opacity: 0;
@@ -305,38 +388,82 @@ footer {
 	}
 }
 
-@keyframes LeftTransform {
+@keyframes RightRotate360 {
 	from {
-		transform: translateX(-60em);
+		transform: rotate(-360deg);
 		opacity: 0;
 	} to {
-		transform: translateX(0);
+    	transform: rotate(0);
 		opacity: 1;
 	}
 }
 
-@keyframes RightTransform {
+@keyframes LeftRotate360 {
 	from {
-		transform: translateX(60em);
+		transform: rotate(360deg);
 		opacity: 0;
 	} to {
-		transform: translateX(0);
+    	transform: rotate(0);
 		opacity: 1;
 	}
 }
 
-@keyframes LeftBackRotate {
+@keyframes RightSkew {
 	from {
-		transform: rotateZ(15deg);
+  		transform: skewX(45deg);
+		opacity: 0;
 	} to {
-		transform: rotateZ(0);
+   		transform: skewX(0);
+		opacity: 1;
 	}
 }
 
-@keyframes RightBackRotate {
+@keyframes LeftSkew {
 	from {
-		transform: rotateZ(15deg);
+  		transform: skewX(-45deg);
+		opacity: 0;
 	} to {
-		transform: rotateZ(0);
+   		transform: skewX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes ZoomIn {
+	from {
+		transform: scale(0.5);
+		opacity: 0;
+	} to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes ZoomOut {
+	from {
+		transform: scale(2);
+		opacity: 0;
+	} to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes FlipLeft {
+	from {
+      transform: perspective(2500px) rotateY(-100deg);
+		opacity: 0;
+	} to {
+      	transform: perspective(0) rotateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes FlipUp {
+	from {
+      	transform: perspective(2500px) rotateX(-100deg);
+		opacity: 0;
+	} to {
+      	transform: perspective(0) rotateX(0);
+		opacity: 1;
 	}
 }
