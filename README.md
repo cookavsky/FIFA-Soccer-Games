@@ -21,9 +21,9 @@ It does not have any requirements. The principle of "copy, paste". It was create
 * JS
 
 ## Acknowledgments
-### SVG is powerful format, which you can easily animation.
-### windowHeightLoad = window.innerHeight + window.scrollY It - is our size of website.
-### X.offsetTop - It is the place where the element is located on the page.
+* SVG is powerful format, which you can easily animation.
+* windowHeightLoad = _window.innerHeight + window.scrollY_ - It is our size of website.
+* **X.offsetTop** - It is the place where the element is located on the page.
 
 ## Status
 To improve
