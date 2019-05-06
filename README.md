@@ -29,4 +29,4 @@ It does not have any requirements. The principle of "copy, paste". It was create
 To improve
 
 ## Author
-Created by [cookavsky-FIFA](https://www.fifa.cookavsky.com/) - for friends Polska Panda.
+Created by [cookavsky - FIFA](https://www.fifa.cookavsky.com/) - for friends Polska Panda.
