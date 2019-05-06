@@ -1,3 +1,32 @@
-# FIFA is a game that I devoted to ten years. #1. 
-I'm learing base HTML5, CSS. Better more practice than teory. 
-I decided to write everything in English and create pages www that describe me and my interests. In this way, I learn English and get to know myself again.
+# EA Sports FIFA
+**Soccer Video Game FIFA** game mode, stage and adventure of the Polska Panda. Game description written by an experienced player. How really this game looks like to me.
+
+## Table of contents
+* [Getting Started](#getting-started)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Acknowledgments](#acknowledgments)
+* [Status](#status)
+* [Author](#author)
+
+## Getting Started
+It does not have any requirements. The principle of "copy, paste". It was created to start learning the animation on the page. It is my first time with Adobe Illustrator CC and files .svg. I also wanted to commemorate the chapter of playing virtual clubs that I closed.
+
+## Screenshots
+![Example screenshot](./img/screencapture.jpg)
+
+## Technologies
+* HTML
+* CSS
+* JS
+
+## Acknowledgments
+### SVG is powerful format, which you can easily animation.
+### windowHeightLoad = window.innerHeight + window.scrollY It - is our size of website.
+### X.offsetTop - It is the place where the element is located on the page.
+
+## Status
+To improve
+
+## Author
+Created by [cookavsky-FIFA](https://www.fifa.cookavsky.com/) - for friends Polska Panda.
