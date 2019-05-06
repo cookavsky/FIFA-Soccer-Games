@@ -28,5 +28,5 @@ It does not have any requirements. The principle of "copy, paste". It was create
 ## Status
 To improve
 
-## Auth-or
+## Author
 Created by **_cookavsky_** - [FIFA](https://www.fifa.cookavsky.com/) - for friends Polska Panda.
