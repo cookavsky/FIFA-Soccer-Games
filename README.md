@@ -5,6 +5,7 @@
 * [Getting Started](#getting-started)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
+* [To do](#to-do)
 * [Acknowledgments](#acknowledgments)
 * [Status](#status)
 * [Author](#author)
@@ -19,6 +20,10 @@ It does not have any requirements. The principle of "copy, paste". It was create
 * HTML
 * CSS
 * JS
+
+## To do
+* The Appearance
+* Use of new knowledge to improve the site
 
 ## Acknowledgments
 * SVG is powerful format, which you can easily animation.
