@@ -8,6 +8,7 @@
 * [To do](#to-do)
 * [Acknowledgments](#acknowledgments)
 * [Status](#status)
+* [Audits](#audits)
 * [Author](#author)
 
 ## Getting Started
@@ -32,6 +33,11 @@ It does not have any requirements. The principle of "copy, paste". It was create
 
 ## Status
 To improve
+
+## Audits
+Site checked by Lighthouse and got 100% result.
+[Deskop](./audits/cookavsky.com-100%-Deskop)
+[Mobile](./audits/cookavsky.com-100%-Mobile)
 
 ## Author
 Created by **_cookavsky_** - [FIFA](https://cookavsky.com/FIFA_Soccer_Games) - for friends Polska Panda.

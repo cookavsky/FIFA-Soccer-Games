@@ -292,6 +292,10 @@ const AnimateScroll = () => {
     });
 };
 
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+}
+
 changeMenu();
 AnimateScroll();
 Animate();
